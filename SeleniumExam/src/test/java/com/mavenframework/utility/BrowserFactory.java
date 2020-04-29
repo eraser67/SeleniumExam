@@ -29,7 +29,7 @@ public class BrowserFactory {
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 			options.merge(capabilities);
-			driver = new ChromeDriver(options);
+			 driver = new ChromeDriver(options);
 
 		} else if (BrowserName.equals("FireFox")) {
 			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
